@@ -27,8 +27,8 @@
 }
 
 #project3-heading {
-    background-color: #F05F40;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 75px;
 }
 
@@ -58,6 +58,22 @@
 }
 
 #portfolio2 a:hover{
+    /*margin: 2em;*/
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    background-color: #8BD0E8;
+}
+
+#portfolio3 {
+    background-color: #fff;
+}
+#portfolio3 a{
+    /*margin: 2em;*/
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#portfolio3 a:hover{
     /*margin: 2em;*/
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
@@ -128,6 +144,15 @@ hr {
 
 .icon:hover {
     color: #3F3F3F;
+}
+
+.icon2 {
+    margin: 0.7em;
+    color: #1A1A1A;
+}
+
+.icon2:hover {
+    color: #fff;
 }
 
 #mainNav {
