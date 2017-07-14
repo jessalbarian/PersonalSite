@@ -85,7 +85,7 @@
 
 #contact {
     /*background-color: #1A1A1A;*/
-    background: #1A1A1A url(../img/foxopaque.png) no-repeat center center;
+    background-color: #1A1A1A;
     /*background-size: cover;*/
     color: #fff;
     padding: 150px;
