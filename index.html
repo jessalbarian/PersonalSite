@@ -6,8 +6,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jessie Albarian">
-    <meta name="author" content="Jessie Albarian">
+
+    <!-- for Google -->
+    <meta name="description" content="I code. I design. I chase opportunity."/>
+    <meta name="keywords" content="freelancer, developer, designer, jessie, albarian, freelance, personal, website"/>
+    <meta name="author" content="Jessie Albarian"/>
+    <meta name="theme-color" content="#35A8AD">
+    <meta name="copyright" content="Jessie Albarian, LLC"/>
+    <meta name="application-name" content="Jessie Albarian"/>
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="Jessie Albarian"/>
+    <meta property="og:image" content="https://jessiealbarian/img/ogimage.png"/>
+    <meta property="og:image:secure_url" content="https://jessiealbarian/img/ogimage.png">
+    <meta property="og:url" content="https://jessiealbarian.com"/>
+    <meta property="og:description" content="I code. I design. I chase opportunity."/>
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Jessie Albarian"/>
+    <meta name="twitter:site" content="@jessalbarian">
+    <meta name="twitter:creator" content="@jessalbarian">
+    <meta name="twitter:description" content="I code. I design. I chase opportunity."/>
+    <meta name="twitter:image" content="https://jessiealbarian/img/ogimage.png"/>
 
     <title>Jessie Albarian</title>
 
@@ -15,17 +36,16 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
           rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-          rel='stylesheet' type='text/css'>
+
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
 
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
@@ -41,22 +61,7 @@
 
 </head>
 
-<body id="page-top">
-
-
-<header>
-    <div id="large-header" class="header-content large-header">
-        <canvas id="demo-canvas"></canvas>
-        <div class="mySiteHeader text-left">
-            <!--<img class="smallfox" src="img/fox.png" alt="fox logo"/>-->
-            <h1>I code. I design. I chase opportunity.</h1>
-            <!--<hr>-->
-            <!--<p>- Jessie Albarian -</p>-->
-            <!--<a href="#about" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-arrow-circle-down"></i></a>-->
-
-        </div>
-    </div>
-</header>
+<body id="page-top" ng-app="myApp">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -73,22 +78,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a href="#/about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#project-heading">Portfolio</a>
+                    <a href="#">Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#education">Education</a>
+                    <a href="#">Experience</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#skills">Skills</a>
+                    <a href="#/resume">Resume</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a href="#/contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -97,244 +99,213 @@
     <!-- /.container-fluid -->
 </nav>
 
-<!-- ABOUT ME -->
-<section class="bg-primary" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading sr-icons">Who am I?</h2>
-                <hr>
-                <img class="me img-circle" src="img/me_bnw.jpg" alt="jessie albarian" />
-                <p class="sr-icons">
-                    I am a software developer, creative
-                    designer, computer science student graduating with my computer science degree Dec. 2017. I thrive in environments where I'm building something that makes an impact somehow in the world. I am an artist at heart, so I solve problems and work on
-                    projects with both my creativity and logical
-                    mindset. If you're looking for help on a project, I'd love to get in touch!<br><br>
-
-                    You can view my personal pitch deck <a href="personal_pitch_deck.html" style="color: white;">here</a>.
-                </p>
-
-                <a target="_blank" href="mailto:albarian.jess@gmail.com"><i
-                        class="fa fa-envelope-o fa-3x sr-contact icon2"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/jessalbarian"><i
-                        class="fa fa-linkedin fa-3x sr-contact icon2"></i></a>
-                <a target="_blank" href="https://github.com/jessalbarian"><i
-                        class="fa fa-github fa-3x sr-contact icon2"></i></a>
-                <a target="_blank" href="https://www.facebook.com/jessalbarian"><i
-                        class="fa fa-facebook fa-3x sr-contact icon2"></i></a>
-                <a target="_blank" href="https://twitter.com/jessie_travels"><i
-                        class="fa fa-twitter fa-3x sr-contact icon2"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-
+<div ng-view ></div>
 
 
 <!-- PROJECT TITLE -->
-<section id="project-heading">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading sr-button">Website Projects</h2>
-                <hr>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="project-heading">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading sr-button">Website Projects</h2>-->
+                <!--<hr>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 <!-- WEBSITE PORTFOLIO SECTION-->
-<section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="hackcu">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                HackCU.org
-                            </div>
-                            <div class="project-category text-faded">
-                                HTML, CSS, Javascript, Bootstrap
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="mobile makers">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                MobileMakers.io
-                            </div>
-                            <div class="project-category text-faded">
-                                HTML, CSS, Graphics, Bootstrap
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="made movement dashboard">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Made Movement Dashboard
-                            </div>
-                            <div class="project-category text-faded">
-                                Javascript, HTML, CSS, Raspberry Pi 3, Tilt Sensors
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="hackcu 2016">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                2016.HackCU.org
-                            </div>
-                            <div class="project-category text-faded">
-                                HTML, CSS, Javascript, Bootstrap
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="travelers mindset">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Travelersmindset.com
-                            </div>
-                            <div class="project-category text-faded">
-                                Complete Wix to Wordpress Migration & Design, PHP
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/boldbetties.png" class="img-responsive" alt="boldbetties.com">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Boldbetties.com
-                            </div>
-                            <div class="project-category text-faded">
-                                Liquid, Shopify, Javascript, HTML/CSS
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/hackcuiii.jpg" class="portfolio-box">
-                        <img src="img/portfolio/fullsize/hackcuiii.jpg" class="img-responsive" alt="hackcu">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    2017.HackCU.org
-                                </div>
-                                <div class="project-category text-faded">
-                                    AngularJS, HTML, CSS, Javascript, Bootstrap
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/mine.jpg" class="portfolio-box">
-                        <img src="img/portfolio/fullsize/mine.jpg" class="img-responsive" alt="my site screenshot">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    jessiealbarian.com (Current Site)
-                                </div>
-                                <div class="project-category text-faded">
-                                    Javascript, HTML/CSS, Bootstrap, Custom Graphics
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/allie.jpg" class="portfolio-box">
-                        <img src="img/portfolio/fullsize/allie.jpg" class="img-responsive" alt="Allie's personal site">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Allie's Personal Site
-                                </div>
-                                <div class="project-category text-faded">
-                                    Complete Weebly to Wordpress migration, Javascript, HTML/CSS, custom graphics
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/thumbnails/alpinsite.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/alpinsite.jpg" class="img-responsive" alt="alpin.io">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Alpin.io
-                            </div>
-                            <div class="project-category text-faded">
-                                Custom graphics, HTML/CSS
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/thumbnails/6.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="personal site">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Personal Site
-                            </div>
-                            <div class="project-category text-faded">
-                                Javascript, HTML/CSS, custom graphics
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/thumbnails/gap.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/gap.jpg" class="img-responsive" alt="the gap rapid city">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    The Gap - Rapid City
-                                </div>
-                                <div class="project-category text-faded">
-                                    PHP, WordPress, HTML/CSS
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="no-padding" id="portfolio">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row no-gutter popup-gallery">-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="hackcu">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--HackCU.org-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--HTML, CSS, Javascript, Bootstrap-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="mobile makers">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--MobileMakers.io-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--HTML, CSS, Graphics, Bootstrap-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="made movement dashboard">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Made Movement Dashboard-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Javascript, HTML, CSS, Raspberry Pi 3, Tilt Sensors-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="hackcu 2016">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--2016.HackCU.org-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--HTML, CSS, Javascript, Bootstrap-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="travelers mindset">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Travelersmindset.com-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Complete Wix to Wordpress Migration & Design, PHP-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/boldbetties.png" class="img-responsive" alt="boldbetties.com">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Boldbetties.com-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Liquid, Shopify, Javascript, HTML/CSS-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="row no-gutter popup-gallery">-->
+                <!--<div class="col-lg-4 col-sm-6">-->
+                    <!--<a href="img/portfolio/fullsize/hackcuiii.jpg" class="portfolio-box">-->
+                        <!--<img src="img/portfolio/fullsize/hackcuiii.jpg" class="img-responsive" alt="hackcu">-->
+                        <!--<div class="portfolio-box-caption">-->
+                            <!--<div class="portfolio-box-caption-content">-->
+                                <!--<div class="project-name">-->
+                                    <!--2017.HackCU.org-->
+                                <!--</div>-->
+                                <!--<div class="project-category text-faded">-->
+                                    <!--AngularJS, HTML, CSS, Javascript, Bootstrap-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="col-lg-4 col-sm-6">-->
+                    <!--<a href="img/portfolio/fullsize/mine.jpg" class="portfolio-box">-->
+                        <!--<img src="img/portfolio/fullsize/mine.jpg" class="img-responsive" alt="my site screenshot">-->
+                        <!--<div class="portfolio-box-caption">-->
+                            <!--<div class="portfolio-box-caption-content">-->
+                                <!--<div class="project-name">-->
+                                    <!--jessiealbarian.com (Current Site)-->
+                                <!--</div>-->
+                                <!--<div class="project-category text-faded">-->
+                                    <!--Javascript, HTML/CSS, Bootstrap, Custom Graphics-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="col-lg-4 col-sm-6">-->
+                    <!--<a href="img/portfolio/fullsize/allie.jpg" class="portfolio-box">-->
+                        <!--<img src="img/portfolio/fullsize/allie.jpg" class="img-responsive" alt="Allie's personal site">-->
+                        <!--<div class="portfolio-box-caption">-->
+                            <!--<div class="portfolio-box-caption-content">-->
+                                <!--<div class="project-name">-->
+                                    <!--Allie's Personal Site-->
+                                <!--</div>-->
+                                <!--<div class="project-category text-faded">-->
+                                    <!--Complete Weebly to Wordpress migration, Javascript, HTML/CSS, custom graphics-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row no-gutter popup-gallery">-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/thumbnails/alpinsite.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/alpinsite.jpg" class="img-responsive" alt="alpin.io">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Alpin.io-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Custom graphics, HTML/CSS-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/thumbnails/6.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="personal site">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Personal Site-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Javascript, HTML/CSS, custom graphics-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+                <!--<div class="col-lg-4 col-sm-6">-->
+                    <!--<a href="img/portfolio/thumbnails/gap.jpg" class="portfolio-box">-->
+                        <!--<img src="img/portfolio/thumbnails/gap.jpg" class="img-responsive" alt="the gap rapid city">-->
+                        <!--<div class="portfolio-box-caption">-->
+                            <!--<div class="portfolio-box-caption-content">-->
+                                <!--<div class="project-name">-->
+                                    <!--The Gap - Rapid City-->
+                                <!--</div>-->
+                                <!--<div class="project-category text-faded">-->
+                                    <!--PHP, WordPress, HTML/CSS-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 
@@ -350,263 +321,263 @@
 
 
 <!-- PROJECT TITLE -->
-<section id="project2-heading">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading sr-button">Mobile App Projects</h2>
-                <hr>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="project2-heading">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading sr-button">Mobile App Projects</h2>-->
+                <!--<hr>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 <!-- APP PORTFOLIO SECTION-->
-<section class="no-padding" id="portfolio2">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/bluelight.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/bluelight.jpg" class="img-responsive" alt="bluelight">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                BlueLight
-                            </div>
-                            <div class="project-category text-faded">
-                                A campus safety app complete in both Android and iOS: Java, XML, Swift, Android Studio,
-                                Xcode
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/whatliftsyou.png" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/whatliftsyou.png" class="img-responsive" alt="what lifts you app">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                What Lifts You
-                            </div>
-                            <div class="project-category text-faded">
-                                A social media iPhone app that allows you to add animated wings from international street artist, Kelsey Montague, to your pictures.
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/avery.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/avery.jpg" class="img-responsive"
-                         alt="avery brewing company app screenshot">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Avery Brewing
-                            </div>
-                            <div class="project-category text-faded">
-                                An Android app for Avery Brewing Company to show beers on tap and events: Java, XML,
-                                Android Studio
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/app4.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/app4.jpg" class="img-responsive" alt="campus app screenshot">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Campus App
-                            </div>
-                            <div class="project-category text-faded">
-                                An app for students at universities, specifically the CU schools, complete in Android
-                                and iOS: Java, XML, Swift, Firebase NoSQL Database, MapKit, Google Maps
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/app5.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/app5.jpg" class="img-responsive" alt="Estimote Beacons">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                iBeacon BLE App
-                            </div>
-                            <div class="project-category text-faded">
-                                Using Beacons and the iOS Estimote SDK, this iOS app demoed Beacon capabilities such as
-                                BLE, triangulation, and finding user location.
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/patches.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/patches.jpg" class="img-responsive" alt="patches app screenshot">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Patches
-                            </div>
-                            <div class="project-category text-faded">
-                                An animal shelter app, with the Boulder Humane Society data, complete in both Android
-                                and iOS: Java, XML, Swift, Android Studio, Xcode
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="no-padding" id="portfolio2">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row no-gutter popup-gallery">-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/bluelight.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/bluelight.jpg" class="img-responsive" alt="bluelight">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--BlueLight-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--A campus safety app complete in both Android and iOS: Java, XML, Swift, Android Studio,-->
+                                <!--Xcode-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/whatliftsyou.png" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/whatliftsyou.png" class="img-responsive" alt="what lifts you app">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--What Lifts You-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--A social media iPhone app that allows you to add animated wings from international street artist, Kelsey Montague, to your pictures.-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/avery.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/avery.jpg" class="img-responsive"-->
+                         <!--alt="avery brewing company app screenshot">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Avery Brewing-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--An Android app for Avery Brewing Company to show beers on tap and events: Java, XML,-->
+                                <!--Android Studio-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/app4.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/app4.jpg" class="img-responsive" alt="campus app screenshot">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Campus App-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--An app for students at universities, specifically the CU schools, complete in Android-->
+                                <!--and iOS: Java, XML, Swift, Firebase NoSQL Database, MapKit, Google Maps-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/app5.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/thumbnails/app5.jpg" class="img-responsive" alt="Estimote Beacons">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--iBeacon BLE App-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--Using Beacons and the iOS Estimote SDK, this iOS app demoed Beacon capabilities such as-->
+                                <!--BLE, triangulation, and finding user location.-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/patches.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/patches.jpg" class="img-responsive" alt="patches app screenshot">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Patches-->
+                            <!--</div>-->
+                            <!--<div class="project-category text-faded">-->
+                                <!--An animal shelter app, with the Boulder Humane Society data, complete in both Android-->
+                                <!--and iOS: Java, XML, Swift, Android Studio, Xcode-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 
 
 <!-- PROJECT TITLE -->
-<section id="project-heading3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading sr-button">Designs</h2>
-                <hr>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="project-heading3">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading sr-button">Designs</h2>-->
+                <!--<hr>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 <!-- WEBSITE PORTFOLIO SECTION-->
-<section class="no-padding" id="portfolio3">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design1.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/design1.jpg" class="img-responsive" alt="parallax images">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Parallax images for website
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design2.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/design2.jpg" class="img-responsive" alt="tshirt designs">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                T-shirt designs
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design3.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/alpin.jpg" class="img-responsive" alt="alpin.io">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Social media cover photos and app dashboard image
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design5.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/design5.jpg" class="img-responsive" alt="ATLAS Expo Poster">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                ATLAS Institute Expo poster
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design6.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/design6.jpg" class="img-responsive" alt="ATLAS flyer">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                ATLAS Institute flyer
-                            </div>
+<!--<section class="no-padding" id="portfolio3">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row no-gutter popup-gallery">-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design1.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/design1.jpg" class="img-responsive" alt="parallax images">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Parallax images for website-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design2.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/design2.jpg" class="img-responsive" alt="tshirt designs">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--T-shirt designs-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design3.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/alpin.jpg" class="img-responsive" alt="alpin.io">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Social media cover photos and app dashboard image-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design5.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/design5.jpg" class="img-responsive" alt="ATLAS Expo Poster">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--ATLAS Institute Expo poster-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design6.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/design6.jpg" class="img-responsive" alt="ATLAS flyer">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--ATLAS Institute flyer-->
+                            <!--</div>-->
 
 
 
 
 
 
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/design4.jpg" class="portfolio-box">
-                    <img src="img/portfolio/fullsize/design4.jpg" class="img-responsive" alt="boulder flatirons">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                Boulder flatirons
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-sm-6">-->
+                <!--<a href="img/portfolio/fullsize/design4.jpg" class="portfolio-box">-->
+                    <!--<img src="img/portfolio/fullsize/design4.jpg" class="img-responsive" alt="boulder flatirons">-->
+                    <!--<div class="portfolio-box-caption">-->
+                        <!--<div class="portfolio-box-caption-content">-->
+                            <!--<div class="project-name">-->
+                                <!--Boulder flatirons-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 
 <!--EDUCATION-->
-<section id="education">
-    <div class="container education">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading sr-button">Education</h2>
-                <hr>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="service-box sr-icons">
-                    <h3>University of Colorado at Boulder</h3>
-                    <p>Bachelors in Computer Science</p>
-                    <p>Graduating Dec. 2017</p>
+<!--<section id="education">-->
+    <!--<div class="container education">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading sr-button">Education</h2>-->
+                <!--<hr>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 col-md-12 text-center">-->
+                <!--<div class="service-box sr-icons">-->
+                    <!--<h3>University of Colorado at Boulder</h3>-->
+                    <!--<p>Bachelors in Computer Science</p>-->
+                    <!--<p>Graduating Dec. 2017</p>-->
 
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="service-box sr-icons">
-                    <h3>Front Range Community College</h3>
-                    <p>Associates Degree of Science</p>
-                    <p>Graduated May 2014</p>
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-12 col-md-12 text-center">-->
+                <!--<div class="service-box sr-icons">-->
+                    <!--<h3>Front Range Community College</h3>-->
+                    <!--<p>Associates Degree of Science</p>-->
+                    <!--<p>Graduated May 2014</p>-->
 
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="service-box sr-icons">
-                    <h3>Boulder High School</h3>
-                    <p>Graduated 2010</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-12 col-md-12 text-center">-->
+                <!--<div class="service-box sr-icons">-->
+                    <!--<h3>Boulder High School</h3>-->
+                    <!--<p>Graduated 2010</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 
@@ -614,43 +585,43 @@
 
 
 <!--Skills-->
-<section id="skills">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Skills</h2>
-                <hr class="light">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 text-center">
-                <ul>
-                    <li>Swift</li>
-                    <li>iOS Development</li>
-                    <li>Java</li>
-                    <li>Android Development</li>
-                    <li>Angular 1 and 2</li>
-                    <li>SQL Databases</li>
-                    <li>NoSQL Databases</li>
-                    <li>Javascript</li>
-                    <li>WordPress/PHP</li>
-                </ul>
-            </div>
-            <div class="col-lg-6 text-center">
-                <ul>
-                    <li>TypeScript</li>
-                    <li>Python</li>
-                    <li>Adobe Illustrator/Photoshop</li>
-                    <li>Graphic Design</li>
-                    <li>Web Design/Mockups</li>
-                    <li>App Design/Mockups</li>
-                    <li>Linux</li>
-                    <li>Shopify</li>
-                    <li>HTML/CSS</li>
-                </ul>
-            </div>
+<!--<section id="skills">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading">Skills</h2>-->
+                <!--<hr class="light">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-6 text-center">-->
+                <!--<ul>-->
+                    <!--<li>Swift</li>-->
+                    <!--<li>iOS Development</li>-->
+                    <!--<li>Java</li>-->
+                    <!--<li>Android Development</li>-->
+                    <!--<li>Angular 1 and 2</li>-->
+                    <!--<li>SQL Databases</li>-->
+                    <!--<li>NoSQL Databases</li>-->
+                    <!--<li>Javascript</li>-->
+                    <!--<li>WordPress/PHP</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-lg-6 text-center">-->
+                <!--<ul>-->
+                    <!--<li>TypeScript</li>-->
+                    <!--<li>Python</li>-->
+                    <!--<li>Adobe Illustrator/Photoshop</li>-->
+                    <!--<li>Graphic Design</li>-->
+                    <!--<li>Web Design/Mockups</li>-->
+                    <!--<li>App Design/Mockups</li>-->
+                    <!--<li>Linux</li>-->
+                    <!--<li>Shopify</li>-->
+                    <!--<li>HTML/CSS</li>-->
+                <!--</ul>-->
+            <!--</div>-->
             <!--<div class="col-lg-4">-->
                 <!--<h4>iOS Development - Swift</h4>-->
                 <!--<div class="progress">-->
@@ -745,9 +716,9 @@
                 <!--</div>-->
             <!--</div>-->
             <!--<div class="col-lg-4"></div>-->
-        </div>
-    </div>
-</section>
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 
@@ -755,263 +726,254 @@
 
 
 <!--EXPERIENCE-->
-<section id="experience">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Experience</h2>
-                <hr>
+<!--<section id="experience">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading">Experience</h2>-->
+                <!--<hr>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="container">-->
+        <!--<ul class="timeline">-->
+
+            <!--<li>-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Professional Freelancer</h4>-->
+                        <!--<h5>Jessie Albarian, LLC</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I am a professional freelance developer and designer who specializes in website-->
+                            <!--development and design, as well as native mobile apps. I am always looking for new clients, so feel free to contact me!-->
+                            <!--Check out my personal website at <a href="http://jessiealbarian.com/" target="_blank">jessiealbarian.com</a></p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">Jan 2016 - Present</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle invert"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Frontend Developer Intern</h4>-->
+                        <!--<h5>Alpin.io</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I was a frontend developer and designer for Logrr for the summer of 2017. I worked with Angular 2-->
+                            <!--and TypeScript to help create a new SaaS monitoring application. I also worked on graphics for-->
+                            <!--the application and their website, <a href="https://alpin.io/" target="_blank">alpin.io</a>.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">May 2017 - Aug 2017</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Website/Mobile App Developer and Graphic Designer</h4>-->
+                        <!--<h5>Boulder Digital Collective</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I did freelance website and mobile app development and graphic design for various companies-->
+                            <!--through the <a href="http://boulderdigitalcollective.com/" target="_blank">Boulder Digital Collective</a>, a-->
+                             <!--women's freelance organization.</a></p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">Jun 2016 - Jun 2017</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle invert"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>iOS Developer Intern</h4>-->
+                        <!--<h5>Made Movement</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I created demo apps for clients, worked with Beacon technology, the SceneKit framework for-->
+                            <!--iOS, Cypress BLE devices, Raspberry Pi 3, and several sensors for Raspberry Pi 3.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">Jun 2016 - Jul 2016</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+
+            <!--<li>-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Director - Head of Technology & Media</h4>-->
+                        <!--<h5>HackCU</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>As director, I oversee sponsorship, operations, technology, hardware, and marketing. I was/am the lead developer with the website team for the websites 2016.hackcu.org, 2017.hackcu.org and hackcu.org. I work closely with the media and marketing team as well as the sponsorship team. My position in HackCU covers several areas under event management and coordination.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">Oct 2015 - Apr 2017</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle invert"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Technology Intern</h4>-->
+                        <!--<h5>Lockheed Martin</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I worked with C#, ASP.net, and a SQL database to maintain a website and database with the software and database team. I currently-->
+                            <!--hold a Secret clearance.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">Feb 2015 - Jun 2016</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>President</h4>-->
+                        <!--<h5>ATLAS Mobile Makers</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I help run the only student led mobile app development club at the University of Colorado Boulder. I teach iOS and Android development to beginners and advanced learners. I also built the website <a href="http://mobilemakers.io/">MobileMakers.io</a></p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer primary">-->
+                        <!--<p class="text-right">Sep 2015 - Present</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle invert"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Director and Co-Founder</h4>-->
+                        <!--<h5>T9Hacks</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>T9Hacks is a women's technology event at the University of Colorado Boulder aimed at-->
+                            <!--increasing women participation in technology fields. I was the main event coordinator and-->
+                            <!--co-founder. I was the lead in media, marketing, design, and sponsorship.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer primary">-->
+                        <!--<p class="text-right">Oct 2015 - Mar 2016</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Technology Assistant and Researcher</h4>-->
+                        <!--<h5>ASSETT (Arts & Sciences Support of Education Through Technology)</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I worked for the University of Colorado Boulder ASSETT team researching technology in-->
+                            <!--university education. I assisted professors with using newer technologies in the classroom.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer">-->
+                        <!--<p class="text-right">May 2014 - Dec 2014</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-badge">-->
+                    <!--<a><i class="fa fa-circle invert"></i></a>-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>Customer Service</h4>-->
+                        <!--<h5>Lead Barista and other customer service positions</h5>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>I worked several customer service related jobs, including serving and being lead barista at-->
+                            <!--Tod's Espresso in Boulder. These experiences taught me how to communicate well with people and work-->
+                            <!--in teams.</p>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-footer primary">-->
+                        <!--<p class="text-right">Nov 2011 - May 2014 (2 years 6 months)</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix no-float"></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</section>-->
+
+
+
+<!-- Footer -->
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="footer">
+            <div>
+                <a href="https://www.linkedin.com/in/jessalbarian" target="_blank"><i
+                        class="fa fa-linkedin fa-2x social-media"></i></a>
+                <a href="https://github.com/jessalbarian" target="_blank"><i
+                        class="fa fa-github fa-2x social-media"></i></a>
+                <a href="https://www.facebook.com/jessalbarian" target="_blank"><i
+                        class="fa fa-facebook fa-2x social-media"></i></a>
+                <a href="https://twitter.com/jessalbarian" target="_blank"><i
+                        class="fa fa-twitter fa-2x social-media"></i></a>
+            </div>
+            <div>
+                <p>Copyright 2017 Jessie Albarian, LLC</p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <ul class="timeline">
+</div>
 
-            <li>
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Professional Freelancer</h4>
-                        <h5>Jessie Albarian, LLC</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I am a professional freelance developer and designer who specializes in website
-                            development and design, as well as native mobile apps. I am always looking for new clients, so feel free to contact me!
-                            Check out my personal website at <a href="http://jessiealbarian.com/" target="_blank">jessiealbarian.com</a></p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">Jan 2016 - Present</p>
-                    </div>
-                </div>
-            </li>
+<!-- Angular Core JavaScript -->
+<!--<script src="bower_components/angular/angular.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 
-            <li class="timeline-inverted">
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle invert"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Frontend Developer Intern</h4>
-                        <h5>Alpin.io</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I was a frontend developer and designer for Logrr for the summer of 2017. I worked with Angular 2
-                            and TypeScript to help create a new SaaS monitoring application. I also worked on graphics for
-                            the application and their website, <a href="https://alpin.io/" target="_blank">alpin.io</a>.</p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">May 2017 - Aug 2017</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Website/Mobile App Developer and Graphic Designer</h4>
-                        <h5>Boulder Digital Collective</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I did freelance website and mobile app development and graphic design for various companies
-                            through the <a href="http://boulderdigitalcollective.com/" target="_blank">Boulder Digital Collective</a>, a
-                             women's freelance organization.</a></p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">Jun 2016 - Jun 2017</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="timeline-inverted">
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle invert"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>iOS Developer Intern</h4>
-                        <h5>Made Movement</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I created demo apps for clients, worked with Beacon technology, the SceneKit framework for
-                            iOS, Cypress BLE devices, Raspberry Pi 3, and several sensors for Raspberry Pi 3.</p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">Jun 2016 - Jul 2016</p>
-                    </div>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Director - Head of Technology & Media</h4>
-                        <h5>HackCU</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>As director, I oversee sponsorship, operations, technology, hardware, and marketing. I was/am the lead developer with the website team for the websites 2016.hackcu.org, 2017.hackcu.org and hackcu.org. I work closely with the media and marketing team as well as the sponsorship team. My position in HackCU covers several areas under event management and coordination.</p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">Oct 2015 - Apr 2017</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="timeline-inverted">
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle invert"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Technology Intern</h4>
-                        <h5>Lockheed Martin</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I worked with C#, ASP.net, and a SQL database to maintain a website and database with the software and database team. I currently
-                            hold a Secret clearance.</p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">Feb 2015 - Jun 2016</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>President</h4>
-                        <h5>ATLAS Mobile Makers</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I help run the only student led mobile app development club at the University of Colorado Boulder. I teach iOS and Android development to beginners and advanced learners. I also built the website <a href="http://mobilemakers.io/">MobileMakers.io</a></p>
-                    </div>
-                    <div class="timeline-footer primary">
-                        <p class="text-right">Sep 2015 - Present</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="timeline-inverted">
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle invert"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Director and Co-Founder</h4>
-                        <h5>T9Hacks</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>T9Hacks is a women's technology event at the University of Colorado Boulder aimed at
-                            increasing women participation in technology fields. I was the main event coordinator and
-                            co-founder. I was the lead in media, marketing, design, and sponsorship.</p>
-                    </div>
-                    <div class="timeline-footer primary">
-                        <p class="text-right">Oct 2015 - Mar 2016</p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Technology Assistant and Researcher</h4>
-                        <h5>ASSETT (Arts & Sciences Support of Education Through Technology)</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I worked for the University of Colorado Boulder ASSETT team researching technology in
-                            university education. I assisted professors with using newer technologies in the classroom.</p>
-                    </div>
-                    <div class="timeline-footer">
-                        <p class="text-right">May 2014 - Dec 2014</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="timeline-inverted">
-                <div class="timeline-badge">
-                    <a><i class="fa fa-circle invert"></i></a>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Customer Service</h4>
-                        <h5>Lead Barista and other customer service positions</h5>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I worked several customer service related jobs, including serving and being lead barista at
-                            Tod's Espresso in Boulder. These experiences taught me how to communicate well with people and work
-                            in teams.</p>
-                    </div>
-                    <div class="timeline-footer primary">
-                        <p class="text-right">Nov 2011 - May 2014 (2 years 6 months)</p>
-                    </div>
-                </div>
-            </li>
-            <li class="clearfix no-float"></li>
-        </ul>
-    </div>
-</section>
-
-
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-sm-12 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-                <!--<hr class="light">-->
-                <p>Ready to start your next project with me?</p>
-            </div>
-            <div class="col-lg-12 text-center">
-                <a target="_blank" href="mailto:albarian.jess@gmail.com"><i
-                        class="fa fa-envelope-o fa-3x icon"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/jessalbarian"><i
-                        class="fa fa-linkedin fa-3x icon"></i></a>
-                <a target="_blank" href="https://github.com/jessalbarian"><i
-                        class="fa fa-github fa-3x icon"></i></a>
-                <a target="_blank" href="https://www.facebook.com/jessalbarian"><i
-                        class="fa fa-facebook fa-3x icon"></i></a>
-                <a target="_blank" href="https://twitter.com/jessie_travels"><i
-                        class="fa fa-twitter fa-3x icon"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--<footer>-->
-    <!--<p>Last Updated July 2017</p>-->
-<!--</footer>-->
+<!-- Angular App JS -->
+<script src="js/app.js"></script>
 
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/creative.min.js"></script>
-
-<!--Custom JavaScript-->
-<script src="js/demo-2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
 
 </body>
 

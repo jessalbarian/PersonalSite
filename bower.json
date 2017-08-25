@@ -1,0 +1,32 @@
+{
+  "name": "Jessie Albarian",
+  "homepage": "https://github.com/jessalbarian/PersonalSite",
+  "authors": [
+    "Jessie Albarian albarian.jess@gmail.com"
+  ],
+  "description": "Personal website for Jessie Albarian",
+  "main": "index.html",
+  "keywords": [
+    "freelance",
+    "jessie",
+    "albarian",
+    "personal",
+    "website"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.2.1",
+    "simple-line-icons": "^2.3.2"
+  }
+}
